@@ -6,13 +6,13 @@
     <title>Document</title>
    
 </head>
-<link rel="stylesheet" href="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC/Public/Css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC/Public/Css/dinhdang7.css">
-    <script src="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC/Public/Js/jquery-3.3.1.slim.min.js"></script>
-    <script src="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC/Public/Js/popper.min.js"></script>
-    <script src="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC/Public/Js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="h<?php echo URLROOT ?>/Public/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="h<?php echo URLROOT ?>/Public/Css/dinhdang7.css">
+    <script src="h<?php echo URLROOT ?>/Public/Js/jquery-3.3.1.slim.min.js"></script>
+    <script src="h<?php echo URLROOT ?>/Public/Js/popper.min.js"></script>
+    <script src="h<?php echo URLROOT ?>/Public/Js/bootstrap.min.js"></script>
 <body>
-<form method="post" action="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC%20%C4%91%E1%BB%81%202/formthem_ctrl/themmoi">
+<form method="post" action="<?php echo URLROOT ?>/formthem_ctrl/themmoi">
     <div class="form-group">
         <label for="myID">ID Văn Bằng</label>
         <input type="text" id = "myID" class="form-control dd1" placeholder="ID môn học" name="txtID" value="<?php if(isset($data['id'])) echo $data['id'] ?>" required>
@@ -22,7 +22,7 @@
         <input type="text" id="mySoHieuVanBang" class="form-control" placeholder="Số Hiệu Văn Bằng" name="txtSoHieuVanBang" value="<?php if(isset($data['sohieuvb'])) echo $data['sohieuvb'] ?>" required>
         <br>
         <button type="submit" class="btn btn-primary" name="btnLuu">Lưu</button>   
-        <a href="http://localhost/thi%20gi%E1%BB%AFa%20h%E1%BB%8Dc%20k%C3%AC%20%C4%91%E1%BB%81%202/formchinh_ctrl/timkiem1"  class="btn btn-primary" name="btnQuayLai">Quay Lại</a>                      
+        <a href="<?php echo URLROOT ?>/formchinh_ctrl/timkiem1"  class="btn btn-primary" name="btnQuayLai">Quay Lại</a>                      
     </div>
 </form>
 </body>
